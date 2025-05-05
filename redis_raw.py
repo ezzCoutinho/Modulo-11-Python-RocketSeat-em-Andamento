@@ -39,3 +39,10 @@ print(r.hlen("meu_hash"))
 
 # para buscar as chaves usamos o hkeys
 print(r.hkeys("meu_hash"))
+
+# Time to live
+r.set("chave_del", "valor", ex=10)
+
+# para buscar o ttl usamos o ttl
+print(r.ttl("chave_del"))
+r.expire("meu_hash", 10)
