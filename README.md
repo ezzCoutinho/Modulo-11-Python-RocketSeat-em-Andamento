@@ -7,3 +7,8 @@ O Redis é um banco de dados NoSQL amplamente reconhecido por sua alta performan
 ## 03/05
 
 Hoje, adicionamos a biblioteca redis ao projeto, onde aprendemos a fazer a conexão com o banco de dados e a executar comandos básicos do Redis.
+
+
+## 05/05
+
+Hoje, configuramos a inicialização da nossa tabela de banco de dados, que servirá como modelo para a estrutura da tabela. Também estabelecemos a conexão com o Redis, incluindo métodos para conectar e acessar essa conexão.
