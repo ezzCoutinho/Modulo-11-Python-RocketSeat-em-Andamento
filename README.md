@@ -12,3 +12,8 @@ Hoje, adicionamos a biblioteca redis ao projeto, onde aprendemos a fazer a conex
 ## 05/05
 
 Hoje, configuramos a inicialização da nossa tabela de banco de dados, que servirá como modelo para a estrutura da tabela. Também estabelecemos a conexão com o Redis, incluindo métodos para conectar e acessar essa conexão.
+
+
+## 06/05
+
+Hoje, configuramos nossos repositórios com métodos do Redis, que incluem: insert, get_key, insert_hash, get_hash, insert_hash_expire e insert_expire. Todos esses métodos foram testados no arquivo redis_raw.py. Além disso, finalizamos a conexão com o banco de dados SQLite3.
