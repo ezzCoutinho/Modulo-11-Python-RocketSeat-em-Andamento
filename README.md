@@ -17,3 +17,8 @@ Hoje, configuramos a inicialização da nossa tabela de banco de dados, que serv
 ## 06/05
 
 Hoje, configuramos nossos repositórios com métodos do Redis, que incluem: insert, get_key, insert_hash, get_hash, insert_hash_expire e insert_expire. Todos esses métodos foram testados no arquivo redis_raw.py. Além disso, finalizamos a conexão com o banco de dados SQLite3.
+
+
+## 07/05
+
+Hoje, desenvolvemos a classe `ProductsRepository`, responsável por gerenciar operações de inserção e consulta de produtos no banco de dados através do nome do produto. Implementamos testes de integração utilizando o framework `pytest` para validar o funcionamento desta classe. Além disso, criamos interfaces para padronizar as conexões tanto com o SQLite quanto com o Redis, estabelecendo contratos claros para os repositórios e conexões em ambos os bancos de dados. Futuramente, iremos complementar com testes unitários para garantir ainda mais a qualidade do código. 
