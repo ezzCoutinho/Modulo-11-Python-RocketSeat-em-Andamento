@@ -1,7 +1,11 @@
 from redis import Redis
 
+from src.models.redis.interfaces.redis_connection_interface import (
+    RedisConnectionInterface,
+)
 
-class RedisConnection:
+
+class RedisConnection(RedisConnectionInterface):
     def __init__(self):
         self.__redis = None
 

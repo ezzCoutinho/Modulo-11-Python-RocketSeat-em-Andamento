@@ -1,8 +1,12 @@
 import sqlite3
 from sqlite3 import Connection as SQLiteConnection
 
+from src.models.sqlite.interfaces.sqlite_connection_interface import (
+    SQLiteConnectionInterface,
+)
 
-class SQLiteConnectionHandler:
+
+class SQLiteConnectionHandler(SQLiteConnectionInterface):
     def __init__(self) -> None:
         self.__connection_string = "storage.db"
         self.__conn = None
