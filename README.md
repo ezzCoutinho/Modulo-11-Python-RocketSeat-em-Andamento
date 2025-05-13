@@ -22,3 +22,8 @@ Hoje, configuramos nossos repositórios com métodos do Redis, que incluem: inse
 ## 07/05
 
 Hoje, desenvolvemos a classe `ProductsRepository`, responsável por gerenciar operações de inserção e consulta de produtos no banco de dados através do nome do produto. Implementamos testes de integração utilizando o framework `pytest` para validar o funcionamento desta classe. Além disso, criamos interfaces para padronizar as conexões tanto com o SQLite quanto com o Redis, estabelecendo contratos claros para os repositórios e conexões em ambos os bancos de dados. Futuramente, iremos complementar com testes unitários para garantir ainda mais a qualidade do código. 
+
+
+## 12/05
+
+Hoje, finalizamos o product_finder, onde realizamos uma busca no Redis primeiro e, se necessário, no SQL, utilizando uma condicional para essa execução. Também criamos os tipos http_types, que gerenciam as requisições e respostas para nossas rotas. Além disso, desenvolvemos o product_creator, que cria nossos produtos inicialmente no banco de dados SQL e, em seguida, no Redis.
