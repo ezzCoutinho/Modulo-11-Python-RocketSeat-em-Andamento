@@ -33,7 +33,8 @@ class ProductCreator:
         self.__sqlite_repo.insert_product(name, price, quantity)
 
     def __insert_in_cache(self, name: str, price: float, quantity: int) -> None:
-        self.__redis_repo.insert_expire(name, price, quantity, expire=60)
+        value = f"{price}:{quantity}"
+        self.__redis_repo.insert_expire(name, value, 60)
 
     def __format_response(self, name: str, price: float, quantity: int) -> HttpResponse:
         return HttpResponse(
