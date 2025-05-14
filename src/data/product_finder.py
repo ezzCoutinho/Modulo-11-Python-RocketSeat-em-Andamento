@@ -32,8 +32,10 @@ class ProductFinder:
         product_info = self.__redis_repo.get_key(product_name)
 
         if product_info:
-            product_info_list = product_info.split(",")
-            return (0, product_name, product_info_list[0], product_info_list[1])
+            product_info_list = product_info.split(":")
+            price = float(product_info_list[0])
+            quantity = int(product_info_list[1])
+            return (0, product_name, price, quantity)
 
         return None
 
@@ -47,7 +49,7 @@ class ProductFinder:
 
     def __insert_in_cache(self, product: tuple) -> None:
         product_name = product[1]
-        value = f"{product[2]},{product[3]}"
+        value = f"{product[2]}:{product[3]}"
         self.__redis_repo.insert_expire(product_name, value, 60)
 
     def __format_response(self, product: tuple) -> HttpResponse:
