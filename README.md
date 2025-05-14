@@ -27,3 +27,8 @@ Hoje, desenvolvemos a classe `ProductsRepository`, responsável por gerenciar op
 ## 12/05
 
 Hoje, finalizamos o product_finder, onde realizamos uma busca no Redis primeiro e, se necessário, no SQL, utilizando uma condicional para essa execução. Também criamos os tipos http_types, que gerenciam as requisições e respostas para nossas rotas. Além disso, desenvolvemos o product_creator, que cria nossos produtos inicialmente no banco de dados SQL e, em seguida, no Redis.
+
+
+## 13/05
+
+Hoje, estabelecemos a conexão com o novo framework Flask, que utilizaremos para rodar nosso servidor. Criamos duas rotas no arquivo product_routes.py, onde implementamos um método POST e um método GET para testes. Além disso, adicionamos ao módulo a conexão com o servidor, configurando primeiro as conexões com o Redis e o SQL antes de iniciar o servidor propriamente dito."
