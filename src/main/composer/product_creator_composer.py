@@ -1,10 +1,13 @@
-from src.main.server.server_settings import redis_connection, sqlite_connection
+from src.main.server.connections import get_redis_connection, get_sqlite_connection
 from src.models.redis.repositories.redis_repository import RedisRepository
 from src.models.sqlite.repository.products_repository import ProductsRepository
 from src.data.product_creator import ProductCreator
 
 
 def product_creator_composer() -> ProductCreator:
+    redis_connection = get_redis_connection()
+    sqlite_connection = get_sqlite_connection()
+
     redis_conn = redis_connection.get_connection()
     sqlite_conn = sqlite_connection.get_connection()
 
