@@ -8,7 +8,7 @@ from src.models.sqlite.interfaces.sqlite_products_repository_interface import (
 )
 
 
-class s:
+class ProductCreator:
     def __init__(
         self,
         redis_repo: RedisRepositoryInterface,
