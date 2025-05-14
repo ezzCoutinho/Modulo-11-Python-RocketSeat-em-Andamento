@@ -19,7 +19,7 @@ class RedisRepositoryInterface(ABC):
         pass
 
     @abstractmethod
-    def insert_expire(self, key: str, value: any, expire: int) -> None:
+    def insert_expire(self, key: str, value1: any, value2: any, expire: int) -> None:
         pass
 
     @abstractmethod
