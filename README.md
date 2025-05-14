@@ -31,4 +31,4 @@ Hoje, finalizamos o product_finder, onde realizamos uma busca no Redis primeiro 
 
 ## 13/05
 
-Hoje, estabelecemos a conexão com o novo framework Flask, que utilizaremos para rodar nosso servidor. Criamos duas rotas no arquivo product_routes.py, onde implementamos um método POST e um método GET para testes. Além disso, adicionamos ao módulo a conexão com o servidor, configurando primeiro as conexões com o Redis e o SQL antes de iniciar o servidor propriamente dito."
+Hoje terminamos o modulo e estabelecemos a conexão com o novo framework Flask, que utilizaremos para rodar nosso servidor. Criamos duas rotas no arquivo product_routes.py, onde implementamos um método POST e um método GET para testes. Além disso, adicionamos ao módulo a conexão com o servidor, configurando primeiro as conexões com o Redis e o SQL antes de iniciar o servidor propriamente dito."
